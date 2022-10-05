@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dojo Survey</title>
+    </head>
+    <body>
+        <div style="width: 500px; background-color: rgb(59, 59, 59); color: white; margin-left: 700px; margin-top: 30px;">
+            <p style="display: flex; color:rgb(228, 169, 22); font-size: 40px;">Dojo Survey</p>
+            <form style="display: flex; flex-direction:column;" action="/process" method="POST" >
+                <label for="fullname">Name:</label>
+                <input type="text" name="fullname">
+                <label for="location">Dojo Location</label>
+                <select name="location" id="location">
+                    <option value="Philadelphia">Philadelphia</option>
+                    <option value="New Orleans">New Orleans</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Online">Online</option>
+                </select>
+                <label for="language">Favorite Language</label>
+                <select name="language" id="language">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                </select>
+                <label for="comment">Comment (Optional)</label>
+                <input type="text" name="comment">
+                <button style="background-color:rgb(228, 169, 22);" type="submit" >Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
